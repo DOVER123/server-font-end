@@ -28,3 +28,6 @@ nodejs 里面放的nodejs安装后的文件夹。
 getresult.js 是我封装的一个ajax调用后台接口的方法,接收参数是sql和数据库名称。
 
 server.cmd 是写的批处理，用来动态设置系统环境变量（node和oracle客户端）和启动服务。
+
+
+感谢 node-oracle github维护者cjbj和dmcghan的耐心讲解，解决了创建连接池如果用户名和密码输错了无法返回错误信息的问题(连接池创建的时候如果poolMin为0并不会建立连接，只是存了配置信息，所以不会得到错误返回值。) 
